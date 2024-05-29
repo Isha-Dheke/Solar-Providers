@@ -6,117 +6,205 @@
 h2{
     font-size: 72px;
     font-family: "K2D", sans-serif;
+    font-weight: 800;
+    line-height: 80px;
+    letter-spacing: -3%;
 }
 h3{
     font-size: 32px;
     font-family: "K2D", sans-serif;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -3%;
 }
 p{
     font-size: 20px;
     font-family: "Georama", sans-serif;
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 2%;
 }
-.section--container{
+.section--benefit-container{
     background-color: #DBF0B3;
     border-radius: 80px;
 }
 .page--conatiner{
-    padding: 64px;
+    padding: 0px 64px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
-.container--head-benefit h2{
+.section--wrapper{
+    padding: 144px 0px 96px 0px;
+}
+.title--benefits h2{
     text-align: center;
-    margin-bottom: 40px;
 }
-.container--body{
+.section--grid-container{
     display: grid;
-    grid-template-columns: 570px 570px 570px;
+    grid-template-columns: auto auto auto;
     gap: 32px;
     justify-content: center;
+    margin-top: 64px;
+    width: 100%;
 }
-.container{
+.grid-item{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     border-radius: 64px;
-    padding: 32px;
+    padding: 24px 32px 48px 32px;
     background-color: white;
 }
-.container:hover{
+.grid-item:hover{
     background-color: #FDDBB5;
 }
-.container img{
-    margin-bottom: 16px;
+
+.grid-content{
+    margin-top: 32px;
 }
-.container h3{
+
+.grid-content h3{
     text-align: center;
     line-height: 40px;
     letter-spacing: -3%;
+    margin-bottom: 8px;
 }
-.container p{
+.grid-content p{
     text-align: center;
     line-height: 32px;
     letter-spacing: 2%;
 }
-
-
-.section--quote{
+.section--quote-container{
     padding-top: 144px;
 }
 
-.section__background-image{
-    background-image: url(image/background.png);
-    background-size: contain;
-    background-position-x: center;
-    height: 839px;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.quote--bg-image{
+    position: relative;
+   text-align: center;
+}
+.quote--bg-image img{
+    width: 86%;
+}
+.quote--content{
+    position: absolute; 
+    top: 40%; 
+    left: 4%;
     justify-content: center;
 }
-.section--quote-full{
-    margin-left: 160px;
-}
-.section--content-quote h2{
+.quote--content h2{
     line-height: 80px;
     letter-spacing: -3%;
 }
 
-.section--content-quote p{
-    text-align: center;
+.quote--content p{
     margin: 0 auto;
     letter-spacing: 2%;
     line-height: 32px;
-    margin-top: 14px;
-    width: 706px;
+    margin-top: 24px;
     font-family: "Georama", sans-serif;
     font-size: 20px;
-    margin-bottom: 120px;
+    max-width: 48%;
+   
 }
 .section--quote-code{
-    font-size: 20px;
-    border-radius: 32px;
-    padding: 10px;
-    background-color: white;
-    justify-content: space-between;
+    margin: 0 auto;
+   background-color: white;
+    margin-top: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    border-radius: 32px;
+    max-width: 60%;
+    margin-right: 16%;
 }
 .section--quote-code input{
-    border: none;
-    font-size: 16px;
+   outline: none;
+   border: none;
+}
+.section--quote-code input::placeholder{
     font-family: "Georama", sans-serif;
-    width: 400px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 2%;
 }
 .button-rectangle{
     text-decoration: none;
     border: none;
+    padding:8px 16px ;
     background-color: #FF4D4D;
     font-size: 16px;
     font-family: "Georama", sans-serif;
     border-radius: 32px;
-    padding: 10px;
     color: white;
-    width: 192px;
     cursor: pointer;
+    font-weight: 700;
+}
+.button-rectangle:hover{
+    background-color: wheat ;
+    color: red;
+    border: 1px solid red;
+}
+.button-rectangle:focus{
+    background-color: rgb(240, 210, 210) ;
+    color: red;
+    border: 1px solid red;
+}
+.mobile-image{
+    display: none;
+}
+
+/* Resposive for mobile */
+@media only screen and (max-width: 767px){
+    .quote--bg-image img:not(.mobile-image img) {
+        display: none;
+    }
+
+    h2{
+        font-size: 48px;
+        line-height: 56px;
+    }
+    h3{
+        font-size: 24px;
+        line-height: 32px;
+    }
+    p{
+       font-size: 16px;
+       line-height: 24px;
+    }
+    .section--grid-container{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 32px;
+        justify-content: center;
+        margin-top: 64px;
+        width: 100%;
+    }
+  
+   .section--quote-code{
+    display: flex;
+    flex-direction: column;
+   gap: 20px;
+   width: 100%;
+   }
+   .button-rectangle{
+    width: 100%
+}
+.section--quote-code input{
+    width: 100%;
+    outline: none;
+    padding: 4px;
+    border-radius: 32px;
+    text-align: center;
+ }
+ .mobile-image{
+    display: block;
+ }
+}
+
+@media only screen and (max-width: 991px) and (min-width:768px){
+    
+    .section--grid-container{
+        grid-template-columns: auto auto;
+    }
 }
