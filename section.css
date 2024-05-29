@@ -203,7 +203,6 @@ p{
 }
 
 @media only screen and (max-width: 991px) and (min-width:768px){
-    
     .section--grid-container{
         grid-template-columns: auto auto;
     }
