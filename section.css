@@ -9,6 +9,7 @@ h2{
     font-weight: 800;
     line-height: 80px;
     letter-spacing: -3%;
+   
 }
 h3{
     font-size: 32px;
@@ -41,7 +42,7 @@ p{
 }
 .section--grid-container{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
 }
 .container-benefits{
@@ -72,7 +73,7 @@ p{
     cursor: url(image/Icon.svg), auto;
 }
 
-.quote-container{
+.section--quote-container{
     padding-top: 144px;
 }
 
@@ -100,6 +101,8 @@ p{
     border-radius: 32px;
     padding: 8px 16px 8px 24px;
     max-width: 54%;
+    box-shadow: 0px 16px 24px 0px rgba(10, 41, 24, 0.08);
+    
 }
 .section--quote-code input{
    outline: none;
@@ -166,8 +169,8 @@ p{
     }
 
     h3 {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 32px;
+        line-height: 40px;
     }
 
     p {
@@ -203,6 +206,7 @@ p{
         margin: 0 auto; 
         max-width: 100%;
         background-color:#EAFCFF ;
+        box-shadow: none;
     }
    
     .quote--content{
@@ -218,6 +222,7 @@ p{
         padding: 16px 16px 16px 24px;
         border-radius: 32px;
         font-size: 22px;
+        box-shadow: 0px 16px 24px 0px rgba(10, 41, 24, 0.08);
     }
     .mobile-image{
         display: block;
@@ -229,6 +234,22 @@ p{
     .quote--vector-image img{
         width: 100%; 
         display: block;
+    }
+
+
+    /* next section */
+    .container-content-what h2{
+        display: none;
+    }
+    .content--img--text img{
+        text-align: center;
+        margin: 0 auto;
+    }
+    .content--text{
+        margin: 0 auto;
+    }
+    .content--mobile h2{
+        display: inline;
     }
 }
 
@@ -260,4 +281,30 @@ p{
         font-size: 50px;
         line-height: 20px;
     }
+}
+
+
+
+/* Next Section */
+p{
+    margin-bottom: 32px;
+    color: #381606;
+}
+.container-content-what h2{
+    text-align: center;
+}
+.container--content{
+    padding-top: 64px;
+}
+.content--img--text{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+.content--text{
+    max-width: 640px;
+    gap: 32px;
+}
+.content--mobile{
+    display: none;
 }
