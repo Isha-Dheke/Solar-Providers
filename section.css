@@ -84,7 +84,7 @@ p{
 .quote--bg-image img{
     width: 100%;
 }
-.quote--content{
+ .quote--content{
     position: absolute; 
     top: 40%; 
     left: 4%; 
@@ -146,6 +146,33 @@ p{
     }
 }
 .mobile-image, .mobile-vector,.quote--vector-image {
+    display: none;
+}
+
+/* Next Section */
+p{
+    margin-bottom: 32px;
+    color: #381606;
+}
+.container-content-what h2{
+    text-align: center;
+}
+.container--content{
+    display: flex;
+    justify-content: center;
+    padding-top: 64px;
+}
+.content--img--text{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    max-width: 100%;
+}
+.content--text{
+    max-width: 600px;
+    gap: 32px;
+}
+.content--mobile{
     display: none;
 }
 
@@ -242,14 +269,18 @@ p{
         display: none;
     }
     .content--img--text img{
-        text-align: center;
         margin: 0 auto;
     }
     .content--text{
         margin: 0 auto;
     }
-    .content--mobile h2{
-        display: inline;
+       .content--mobile {
+        display: block; 
+        text-align: center;
+        width: 100%;
+    }
+    .content--mobile h2 {
+        display: block; 
     }
 }
 
@@ -275,36 +306,24 @@ p{
     .button-rectangle{
         padding:4px;
     }
+    .content--img--text{
+        display: flex;
+        flex-wrap: nowrap;
+     
+    }
+   
 }
 @media only screen and (max-width: 1360px) and (min-width:991px){
     h2{
         font-size: 50px;
         line-height: 20px;
     }
+    .content--img--text{
+        display: flex;
+        flex-wrap: nowrap;
+     
+    }
 }
 
 
 
-/* Next Section */
-p{
-    margin-bottom: 32px;
-    color: #381606;
-}
-.container-content-what h2{
-    text-align: center;
-}
-.container--content{
-    padding-top: 64px;
-}
-.content--img--text{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-}
-.content--text{
-    max-width: 640px;
-    gap: 32px;
-}
-.content--mobile{
-    display: none;
-}
