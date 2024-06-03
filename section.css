@@ -9,7 +9,8 @@ h2{
     font-weight: 800;
     line-height: 80px;
     letter-spacing: -3%;
-   
+    color:rgba(56, 22, 6, 1);
+    ;
 }
 h3{
     font-size: 32px;
@@ -17,6 +18,8 @@ h3{
     font-weight: 700;
     line-height: 40px;
     letter-spacing: -3%;
+    color: rgba(56, 22, 6, 1);
+
 }
 p{
     font-size: 20px;
@@ -24,6 +27,8 @@ p{
     font-weight: 500;
     line-height: 32px;
     letter-spacing: 2%;
+    color: rgba(56, 22, 6, 1);
+
 }
 .section--benefit-container{
     background-color: #DBF0B3;
@@ -36,60 +41,61 @@ p{
     margin: 0 auto;
 }
 
-.title--benefits h2{
+.section--benefit-container .title--benefits h2{
     text-align: center;
    
 }
-.section--grid-container{
+ .section--grid-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-content: center;
 }
-.container-benefits{
+ .section--benefit-container .container-benefits{
     gap: 32px;
     margin-top: 64px;
 }
-.grid-item{
+.section--benefit-container .grid-item{
     align-items: center;
     justify-content: center;
 }
-.item-block{
+.section--benefit-container .item-block{
     padding: 24px 32px 48px 32px;
     border-radius: 64px;
     background-color: #FFF4E7;
 }
-.grid-content{
+.section--benefit-container .grid-content{
     display: flex;
     gap: 8px;
     flex-direction: column;
     margin-top: 32px;
     text-align: center;
 }
-.grid-icons{
+.section--benefit-container .grid-icons{
     text-align: center;
 }
-.grid-item:hover{
+.section--benefit-container .grid-item:hover{
     background-color: #FDDBB5;
     cursor: url(image/Icon.svg), auto;
 }
 
+/* Second Page */
 .section--quote-container{
     padding-top: 144px;
 }
 
-.quote--bg-image{
+.section--quote-container .quote--bg-image{
     position: relative;
    text-align: center;
 }
-.quote--bg-image img{
+.section--quote-container .quote--bg-image img{
     width: 100%;
 }
- .quote--content{
+.quote--content{
     position: absolute; 
     top: 40%; 
     left: 4%; 
 }
-.quote--content p{
+.section--quote-container .quote--content p{
     margin: 24px auto;
     max-width: 52%; 
 }
@@ -104,11 +110,11 @@ p{
     box-shadow: 0px 16px 24px 0px rgba(10, 41, 24, 0.08);
     
 }
-.section--quote-code input{
+.section--quote-container .section--quote-code input{
    outline: none;
    border: none;
 }
-.section--quote-code input::placeholder{
+.section--quote-container .section--quote-code input::placeholder{
     font-family: "Georama", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -145,35 +151,117 @@ p{
         fill: red;
     }
 }
-.mobile-image, .mobile-vector,.quote--vector-image {
+ .mobile-image, .mobile-vector,.quote--vector-image {
     display: none;
 }
 
 /* Next Section */
-p{
+.section--second-need .container-content-what p{
     margin-bottom: 32px;
     color: #381606;
 }
-.container-content-what h2{
+.section--second-need .container-content-what h2{
     text-align: center;
 }
-.container--content{
+.section--second-need .container--content{
     display: flex;
     justify-content: center;
     padding-top: 64px;
 }
-.content--img--text{
+ .content--img--text{
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
     max-width: 100%;
 }
-.content--text{
+.section--second-need .content--text{
     max-width: 600px;
     gap: 32px;
 }
-.content--mobile{
+.section--second-need .content--mobile{
     display: none;
+}
+
+/* Next Section */
+.section--content-electricity .container-content-electricity h2{
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+.section--content-electricity .container-content p{
+    max-width:84% ;
+    text-align: center;
+    margin: 32px auto;
+}
+.section--content-electricity .content--save{
+    display: flex;
+    gap: 47px;
+}
+.section--content-electricity .content--save-body{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.section--content-electricity .content--save-head h3{
+    margin-bottom: 32px;
+}
+
+/* Install SOlar Power section */
+.section--second-need .container-content-install .show-desktop{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+.section--second-need .content--text{
+    display: flex;
+    flex-direction: column;
+    gap:32px ;
+}
+.show-mobile{
+    display: none;
+}
+
+
+/* Solar Panel section */
+.section--solar-panel .section--content-panel{
+    padding-bottom: 144px;
+}
+.section--content-panel h2{
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.section--solar-panel .content--solar-panel{
+    display: flex;
+    gap: 32px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+.section--solar-panel .content-text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.section--solar-panel .content-image {
+    display: flex;
+    justify-content: center;  
+    align-items: center;                  
+    text-align: center;      
+}
+.section--solar-panel .content-image-reverse {
+    display: flex;
+    justify-content: center;  
+    align-items: center;                  
+    text-align: center;      
+}
+.section--solar-panel .content--solar-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 32px;
+    max-width: 90%;
+    margin: 0 auto;
 }
 
 /* Resposive for mobile */
@@ -181,14 +269,6 @@ p{
     .page-container{
         padding: 0px 16px;
         margin: 0 auto;
-    }
-  
-    .quote-container{
-        padding: 0;
-        background-color: #EAFCFF;
-    }
-    .quote--bg-image img:not(.mobile-image img, .quote--vector-image img) {
-        display: none;
     }
     h2 {
         font-size: 48px;
@@ -203,25 +283,35 @@ p{
     p {
         font-size: 16px;
         line-height: 24px;
-    }
-    .section--quote-container{
-        padding-top: 96px;
+        color: rgba(56, 22, 6, 1);
     }
     .section--benefit-container{
         padding: 96px 0px;
     }
-    .section--grid-container {
+    .section--benefit-container .section--grid-container {
         grid-template-columns: auto;
     }
-    .container-benefits{
+    .section--benefit-container .container-benefits{
         gap: 16px;
         margin-top: 56px;
     }
-    .item-block{
+    .section--benefit-container .item-block{
         padding: 32px;
         border-radius: 24px;
     }
-    .quote-container{
+    /* second page */
+    .section--quote-container{
+        padding-top: 96px;
+    }
+    .section--quote-container .quote-container{
+        padding: 0;
+        background-color: #EAFCFF;
+    }
+    .section--quote-container .quote--bg-image img:not(.mobile-image img, .quote--vector-image img) {
+        display: none;
+    }
+ 
+    .section--quote-container .quote-container{
         padding-top: 0px;
         background-color: #EAFCFF;
     }
@@ -236,21 +326,26 @@ p{
         box-shadow: none;
     }
    
-    .quote--content{
+    .section--quote-container  .quote--content{
         position: static; 
       
     }
-    .quote--content p {
+    .section--quote-container .quote--content p {
        max-width: 100%;
     }
 
-    .section--quote-code input {
+    .section--quote-container  .section--quote-code input {
         outline: none;
-        padding: 16px 16px 16px 24px;
         border-radius: 32px;
         font-size: 22px;
         box-shadow: 0px 16px 24px 0px rgba(10, 41, 24, 0.08);
+        padding: 8px 8px 8px 16px;
     }
+    .section--quote-code input::placeholder{
+         color: rgba(56, 22, 6, 0.5);
+         font-size: 14px
+        ;
+    } 
     .mobile-image{
         display: block;
     }
@@ -265,29 +360,91 @@ p{
 
 
     /* next section */
-    .container-content-what h2{
+    .section--second-need .container-content-what h2{
         display: none;
     }
-    .content--img--text img{
+     .content--img{
+        margin: 0 auto;
+
+    }
+    .content--img img{
+        height: 232px;
+        width: 187.57px;
+     
+    }
+    .section--second-need .content--text{
         margin: 0 auto;
     }
-    .content--text{
-        margin: 0 auto;
-    }
-       .content--mobile {
+    .section--second-need .content--mobile {
         display: block; 
         text-align: center;
         width: 100%;
     }
-    .content--mobile h2 {
+    .section--second-need .content--mobile h2 {
         display: block; 
     }
+
+
+    /* electricity section */
+    .section--content-electricity .container-content-electricity h2{
+        max-width: 100%;
+    }
+    .section--content-electricity .content--save{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0px;
+    }
+    .section--content-electricity .content--save-img{
+        margin: 24px auto;
+    }
+    .section--content-electricity .content--save-img img{
+        max-width: 168px;
+        max-height: 232px;
+    }
+    .section--content-electricity .content--save-head h3{
+     text-align: center;
+     font-size: 24px;
+     color: rgba(56, 22, 6, 1);
+        margin-bottom: 24px;
+    }
+    .section--content-electricity .container-content p{
+        max-width:100% ;
+    }
+
+    /* Install SOlar Power section */
+    .show-desktop{
+        display: none;
+    }
+    .show-mobile{
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+
+    /* solar panel */
+    .section--solar-panel .content--solar-panel, .content--solar-reverse {
+        display: flex;
+      flex-wrap: wrap;
+    }
+    .section--solar-panel .content-image, .content-image-reverse {
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        gap: 24px;
+    }
+    .section--solar-panel h2{
+        margin: 0px auto;
+        max-width: 100%;
+    }
+    
 }
 
 @media only screen and (max-width: 991px) and (min-width:767px){
     h2{
         font-size: 36px;
-        line-height: 20px;
+        line-height: 40px;
     }
     h3{
         font-size: 22px;
@@ -296,29 +453,34 @@ p{
         font-size: 16px;
         line-height: 22px;
     }
-    .section--grid-container{
+    .section--benefit-container .section--grid-container{
         grid-template-columns: auto auto;
     }
-    .section--quote-code{
-        margin: 10px auto;
-        padding: 8px;   
+    .section--benefit-container .item-block{
+        border-radius: 24px;
+    }
+    .section--quote-container .section--quote-code{
+        margin: 2px auto;
+        padding: 2px;   
     }
     .button-rectangle{
-        padding:4px;
+        padding: 4px;
     }
-    .content--img--text{
+    .section--second-need .content--img--text{
         display: flex;
         flex-wrap: nowrap;
      
     }
-   
+  
+  
 }
 @media only screen and (max-width: 1360px) and (min-width:991px){
     h2{
         font-size: 50px;
-        line-height: 20px;
+        line-height: 48px;
     }
-    .content--img--text{
+   
+    .section--second-need .content--img--text{
         display: flex;
         flex-wrap: nowrap;
      
