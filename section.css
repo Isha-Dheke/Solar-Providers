@@ -8,9 +8,8 @@ h2{
     font-family: "K2D", sans-serif;
     font-weight: 800;
     line-height: 80px;
-    letter-spacing: -3%;
+    letter-spacing: -0.03em;
     color:rgba(56, 22, 6, 1);
-    ;
 }
 h3{
     font-size: 32px;
@@ -70,7 +69,7 @@ p{
     margin-top: 32px;
     text-align: center;
 }
-.section--benefit-container .grid-icons{
+.section--benefit-container  .grid-icons{
     text-align: center;
 }
 .section--benefit-container .grid-item:hover{
@@ -157,7 +156,6 @@ p{
 
 /* Next Section */
 .section--second-need .container-content-what p{
-    margin-bottom: 32px;
     color: #381606;
 }
 .section--second-need .container-content-what h2{
@@ -216,11 +214,15 @@ p{
     display: flex;
     flex-direction: column;
     gap:32px ;
+    text-align: start;
 }
 .show-mobile{
     display: none;
 }
-
+.section--second-need .content--text .show-desktop{
+    text-align: start;
+    margin: 0px;
+}
 
 /* Solar Panel section */
 .section--solar-panel .section--content-panel{
@@ -264,6 +266,47 @@ p{
     margin: 0 auto;
 }
 
+/* setup simplified */
+.section--container-simplified .title--benefits h2{
+    text-align: center;
+}
+.section--container-simplified .title--benefits p{
+    text-align: center;
+    margin: 32px 0px 64px 0px;
+}
+.section--container-simplified .section--grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+}
+.section--container-simplified .container-benefits{
+    gap: 32px;
+    margin-top: 64px;
+}
+.section--container-simplified .grid-item{
+    align-items: center;
+    justify-content: center;
+}
+.section--container-simplified .item-block{
+    padding: 24px 32px 48px 32px;
+    border-radius: 64px;
+    background-color: #FFF4E7;
+}
+.section--container-simplified .grid-content{
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    margin-top: 32px;
+    text-align: center;
+}
+.section--container-simplified  .grid-icons{
+    text-align: center;
+}
+.section--container-simplified .grid-item:hover{
+    background-color: #FDDBB5;
+    cursor: url(image/Icon.svg), auto;
+}
+
 /* Resposive for mobile */
 @media only screen and (max-width: 767px) {
     .page-container{
@@ -278,15 +321,24 @@ p{
     h3 {
         font-size: 32px;
         line-height: 40px;
+        font-weight: 700;
+        letter-spacing: -0.03em;
     }
 
     p {
         font-size: 16px;
         line-height: 24px;
-        color: rgba(56, 22, 6, 1);
+        color: rgba(56, 22, 6, 0.72);
+        font-weight: 500;
+        letter-spacing: 0.02em;
     }
     .section--benefit-container{
         padding: 96px 0px;
+        border-radius: 24px;
+    }
+    .section--benefit-container .grid-content h3{
+        font-size: 24px;
+        
     }
     .section--benefit-container .section--grid-container {
         grid-template-columns: auto;
@@ -337,14 +389,14 @@ p{
     .section--quote-container  .section--quote-code input {
         outline: none;
         border-radius: 32px;
-        font-size: 22px;
+        font-size: 14px;
         box-shadow: 0px 16px 24px 0px rgba(10, 41, 24, 0.08);
-        padding: 8px 8px 8px 16px;
+        padding: 16px 16px 16px 24px;
     }
     .section--quote-code input::placeholder{
          color: rgba(56, 22, 6, 0.5);
-         font-size: 14px
-        ;
+         font-size: 16px;
+         line-height:16px ;
     } 
     .mobile-image{
         display: block;
@@ -374,6 +426,7 @@ p{
     }
     .section--second-need .content--text{
         margin: 0 auto;
+        gap: 16px;
     }
     .section--second-need .content--mobile {
         display: block; 
@@ -410,7 +463,7 @@ p{
     .section--content-electricity .container-content p{
         max-width:100% ;
     }
-
+    
     /* Install SOlar Power section */
     .show-desktop{
         display: none;
@@ -420,9 +473,14 @@ p{
         text-align: center;
         margin: 0 auto;
     }
-
+    .section--second-need .content--text p{
+        text-align: start;
+    }
 
     /* solar panel */
+    .section--solar-panel .section--content-panel{
+        padding-bottom: 96px;
+    }
     .section--solar-panel .content--solar-panel, .content--solar-reverse {
         display: flex;
       flex-wrap: wrap;
