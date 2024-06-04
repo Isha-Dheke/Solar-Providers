@@ -374,18 +374,22 @@ p{
         text-align: center;
         padding-bottom: 56px;
     }
+    .content-hover{
+        p{
+            &:hover{
+                border-left:4px solid rgba(255, 160, 48, 1);
+            }
+        }
+    }
     .content--text-today{
         display: flex;
         flex-direction: column;
         gap: 16px;
         margin: 0 auto;
-
+         
         .text--solar{
             font-weight: 700;
         }
-    }
-    .content--text-paragraph{
-        border-left:4px solid rgba(255, 160, 48, 1);
     }
 }
 
@@ -675,9 +679,6 @@ p{
         .text--solar{
             font-weight: 700;
         }
-    }
-    .content--text-paragraph{
-        border-left:4px solid rgba(255, 160, 48, 1);
     }
 }
 
