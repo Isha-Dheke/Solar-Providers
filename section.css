@@ -378,6 +378,7 @@ p{
         p{
             &:hover{
                 border-left:4px solid rgba(255, 160, 48, 1);
+                padding-left: 32px;
             }
         }
     }
@@ -421,6 +422,15 @@ p{
     }
 }
 
+/* navigation paragraph */
+.section-content-austin{
+    .content--text-today{
+        .solar-yellow{
+            color: rgba(255, 160, 48, 0.72);
+            text-decoration: underline            ;
+        }
+    }
+}
 /* Resposive for mobile */
 @media only screen and (max-width: 767px) {
     .page-container{
