@@ -63,11 +63,11 @@ p{
     background-color: #FFF4E7;
 }
 .section--benefit-container .grid-content{
-    display: flex;
-    gap: 8px;
-    flex-direction: column;
     margin-top: 32px;
     text-align: center;
+    h3{
+        margin-bottom: 8px;
+    }
 }
 .section--benefit-container  .grid-icons{
     text-align: center;
@@ -196,9 +196,9 @@ p{
     gap: 47px;
 }
 .section--content-electricity .content--save-body{
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+    p{
+        margin-bottom: 24px;
+    }
 }
 .section--content-electricity .content--save-head h3{
     margin-bottom: 32px;
@@ -211,10 +211,10 @@ p{
     margin: 0 auto;
 }
 .section--second-need .content--text{
-    display: flex;
-    flex-direction: column;
-    gap:32px ;
-    text-align: start;
+    p{
+        margin-bottom: 32px;
+    }
+   
 }
 .show-mobile{
     display: none;
@@ -242,9 +242,9 @@ p{
     margin: 0 auto;
 }
 .section--solar-panel .content-text{
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+ p{
+    margin-bottom: 16px;
+ }
 }
 .section--solar-panel .content-image {
     display: flex;
@@ -297,11 +297,11 @@ p{
     background-color: #FFF4E7;
 }
 .section--container-simplified .grid-content{
-    display: flex;
-    gap: 8px;
-    flex-direction: column;
     margin-top: 32px;
     text-align: center;
+    h3{
+        margin-bottom: 8px;
+    }
 }
 .section--container-simplified  .grid-icons{
     text-align: center;
@@ -358,9 +358,9 @@ p{
         gap: 8px;
         margin: 0 auto;
         .content-text{
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
+            p{
+                margin-bottom: 16px;
+            }
             max-width: 66%;
         }
     }
@@ -375,9 +375,9 @@ p{
         padding-bottom: 56px;
     }
     .content--text-today{
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
+        p{
+            margin-bottom: 16px;
+        }
         margin: 0 auto;
          
         blockquote{
@@ -402,9 +402,6 @@ p{
     }
     .content--list {
         ul{
-            display: flex;
-            flex-direction: column;
-            gap: 24px;
             line-height: 32px;
             list-style-position: inside;
             font-size: 20px;
@@ -415,6 +412,7 @@ p{
                 align-items: center;
                 position: relative;
                 padding-left: 20px;
+                margin-bottom: 24px;
                 &::before{
                     content: '';
                     position: absolute;
@@ -429,7 +427,7 @@ p{
                     @media only screen and (max-width: 767px){
                         margin-right: 8px;
                         ul{
-                            line: height 24px;
+                           line-height: 24px;
                         }
                     }
                 }
@@ -718,9 +716,7 @@ p{
     }
     .content--list {
         ul{
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
+            margin-bottom: 16px;
             line-height: 16px;
             font-size: 16px;
             color:rgba(111, 87, 75, 1);
