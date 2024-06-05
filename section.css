@@ -391,6 +391,9 @@ p{
         .content--text-paragraph{
             border-left:4px solid rgba(255, 160, 48, 1);
             padding-left: 32px;
+            @media only screen and (max-width: 767px){
+                padding-left: 16px;
+            }
         }
         .text--solar{
             font-weight: 700;
