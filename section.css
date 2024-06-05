@@ -428,6 +428,9 @@ p{
 
                     @media only screen and (max-width: 767px){
                         margin-right: 8px;
+                        ul{
+                            line: height 24px;
+                        }
                     }
                 }
             }
