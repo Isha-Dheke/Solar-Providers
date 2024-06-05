@@ -412,12 +412,17 @@ p{
             font-family: "Georama", sans-serif;
 
             li{
-                &::marker{
-                    color: rgba(255, 160, 48, 1);
+                display: flex;
+                align-items: center;
+             
+                span.bullet{
+                color: rgba(255, 160, 48, 1);
+                margin-right: 12px;
+                font-size: 28px;
                 }
             }
-           
         }
+
 
     }
 }
