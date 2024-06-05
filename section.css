@@ -374,20 +374,24 @@ p{
         text-align: center;
         padding-bottom: 56px;
     }
-    .content-hover{
+    /* .content-hover{
         p{
             &:hover{
                 border-left:4px solid rgba(255, 160, 48, 1);
                 padding-left: 32px;
             }
         }
-    }
+    } */
     .content--text-today{
         display: flex;
         flex-direction: column;
         gap: 16px;
         margin: 0 auto;
          
+        .content--text-paragraph{
+            border-left:4px solid rgba(255, 160, 48, 1);
+            padding-left: 32px;
+        }
         .text--solar{
             font-weight: 700;
         }
@@ -414,7 +418,6 @@ p{
             li{
                 display: flex;
                 align-items: center;
-             
                 span.bullet{
                 color: rgba(255, 160, 48, 1);
                 margin-right: 12px;
@@ -707,7 +710,7 @@ p{
         ul{
             display: flex;
             flex-direction: column;
-            gap: 24px;
+            gap: 16px;
             line-height: 16px;
             font-size: 16px;
             color:rgba(111, 87, 75, 1);
